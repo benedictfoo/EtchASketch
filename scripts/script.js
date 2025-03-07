@@ -23,7 +23,7 @@ function addBoardEvent() {
     "mouseenter",
     (e) => {
       const target = e.target;
-      console.log(target);
+    
 
       if (target.classList.contains("item")) {
         paintRandomColor(target);
