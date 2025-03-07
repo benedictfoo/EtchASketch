@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100dvh;
+}
+* {
+  box-sizing: inherit;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  aspect-ratio: 1/1;
+  height: 70svh;
+  max-height: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+main {
+  height: 100%;
+}
+#board {
+  border: 3px solid black;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#board-dimensions-btn {
+  margin-bottom: 1rem;
+}
+.item {
+  flex-grow: 1;
+  aspect-ratio: 1 / 1;
+  border: 1px solid black;
+}
