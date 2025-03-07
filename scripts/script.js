@@ -1,21 +1,24 @@
 function createItems(itemAmount) {
   const board = document.querySelector("#board");
-
+  console.log(itemAmount * itemAmount);
+  let count = 0;
   for (let items = 0; items < itemAmount * itemAmount; items++) {
     // create one element with class item
     const item = document.createElement("div");
     item.classList.add("item");
     // Set basis  to let css know what basis it is
-    item.style.flexBasis = `${Math.floor(100 / itemAmount)}%`;
+    item.style.flexBasis = `${100 / itemAmount}%`;
     // append to board
     board.appendChild(item);
+    count++;
   }
+  console.log(count);
 
   // delegate event click handling on parent(board)
   // callback for when child is clicked default black
 }
 
-createItems(16);
+createItems(17);
 
 function addBoardEvent() {
   const board = document.querySelector("#board");
@@ -23,7 +26,6 @@ function addBoardEvent() {
     "mouseenter",
     (e) => {
       const target = e.target;
-    
 
       if (target.classList.contains("item")) {
         paintRandomColor(target);

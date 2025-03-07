@@ -16,7 +16,7 @@ h1 {
 }
 .container {
   aspect-ratio: 1/1;
-  height: 70svh;
+  height: 70vh;
   max-height: 100%;
   margin: 0 auto;
   margin-bottom: 2rem;
